@@ -1,0 +1,253 @@
+reports:
+  tcs_fy24:
+    ticker: TCS
+    company: Tata Consultancy Services Limited
+    sector: IT_SERVICES
+    fiscal_year: FY24
+    pdf_path: data/raw_reports/tcs_fy24.pdf
+    total_pages: 340
+    statement_pages:
+      pnl: 181
+      bs: 180
+      cf: 184
+    sections:
+      business_overview:
+        start_page: 5
+        end_page: 30
+      mda:
+        start_page: 69
+        end_page: 90
+      risk_factors:
+        start_page: 79
+        end_page: 90
+  tcs_fy25:
+    ticker: TCS
+    company: Tata Consultancy Services Limited
+    sector: IT_SERVICES
+    fiscal_year: FY25
+    pdf_path: data/raw_reports/tcs_fy25.pdf
+    total_pages: 336
+    statement_pages:
+      pnl: 181
+      bs: 180
+      cf: 184
+    sections:
+      business_overview:
+        start_page: 4
+        end_page: 30
+      mda:
+        start_page: 81
+        end_page: 111
+      risk_factors:
+        start_page: 92
+        end_page: 111
+  tcs_fy26:
+    ticker: TCS
+    company: Tata Consultancy Services Limited
+    sector: IT_SERVICES
+    fiscal_year: FY26
+    pdf_path: data/raw_reports/tcs_fy26.pdf
+    total_pages: 360
+    statement_pages:
+      pnl: 167
+      bs: 166
+      cf: 172
+    sections:
+      business_overview:
+        start_page: 4
+        end_page: 32
+      mda:
+        start_page: 45
+        end_page: 60
+      risk_factors:
+        start_page: 61
+        end_page: 68
+  infy_fy24:
+    ticker: INFY
+    company: Infosys Limited
+    sector: IT_SERVICES
+    fiscal_year: FY24
+    pdf_path: data/raw_reports/infy_fy24.pdf
+    total_pages: 352
+    statement_pages:
+      pnl: 272
+      bs: 271
+      cf: 279
+    sections:
+      business_overview:
+        start_page: 8
+        end_page: 30
+      mda:
+        start_page: 69
+        end_page: 78
+      risk_factors:
+        start_page: 120
+        end_page: 128
+  infy_fy25:
+    ticker: INFY
+    company: Infosys Limited
+    sector: IT_SERVICES
+    fiscal_year: FY25
+    pdf_path: data/raw_reports/infy_fy25.pdf
+    total_pages: 369
+    statement_pages:
+      pnl: 276
+      bs: 275
+      cf: 283
+    sections:
+      business_overview:
+        start_page: 8
+        end_page: 30
+      mda:
+        start_page: 71
+        end_page: 81
+      risk_factors:
+        start_page: 121
+        end_page: 130
+  infy_fy26:
+    ticker: INFY
+    company: Infosys Limited
+    sector: IT_SERVICES
+    fiscal_year: FY26
+    pdf_path: data/raw_reports/infy_fy26.pdf
+    total_pages: 383
+    statement_pages:
+      pnl: 287
+      bs: 286
+      cf: 294
+    sections:
+      business_overview:
+        start_page: 8
+        end_page: 35
+      mda:
+        start_page: 75
+        end_page: 89
+      risk_factors:
+        start_page: 130
+        end_page: 139
+  angelone_fy24:
+    ticker: ANGELONE
+    company: Angel One Limited
+    sector: BROKING_FINTECH
+    fiscal_year: FY24
+    pdf_path: data/raw_reports/angelone_fy24.pdf
+    total_pages: 313
+    statement_pages:
+      pnl: 250
+      bs: 249
+      cf: 251
+    sections:
+      business_overview:
+        start_page: 3
+        end_page: 20
+      mda:
+        start_page: 57
+        end_page: 74
+      risk_factors:
+        start_page: 75
+        end_page: 77
+  angelone_fy25:
+    ticker: ANGELONE
+    company: Angel One Limited
+    sector: BROKING_FINTECH
+    fiscal_year: FY25
+    pdf_path: data/raw_reports/angelone_fy25.pdf
+    total_pages: 177
+    statement_pages:
+      pnl: 50
+      bs: 145
+      cf: 146
+    sections:
+      business_overview:
+        start_page: 3
+        end_page: 20
+      mda:
+        start_page: 41
+        end_page: 65
+      risk_factors:
+        start_page: 63
+        end_page: 86
+  angelone_fy26:
+    ticker: ANGELONE
+    company: Angel One Limited
+    sector: BROKING_FINTECH
+    fiscal_year: FY26
+    pdf_path: data/raw_reports/angelone_fy26.pdf
+    total_pages: 194
+    statement_pages:
+      pnl: 155
+      bs: 155
+      cf: 156
+    sections:
+      business_overview:
+        start_page: 3
+        end_page: 25
+      mda:
+        start_page: 40
+        end_page: 70
+      risk_factors:
+        start_page: 71
+        end_page: 90
+  motilalofs_fy24:
+    ticker: MOTILALOFS
+    company: Motilal Oswal Financial Services Limited
+    sector: BROKING_FINTECH
+    fiscal_year: FY24
+    pdf_path: data/raw_reports/motilalofs_fy24.pdf
+    total_pages: 401
+    statement_pages:
+      pnl: 267
+      bs: 266
+      cf: 268
+    sections:
+      business_overview:
+        start_page: 6
+        end_page: 50
+      mda:
+        start_page: 49
+        end_page: 70
+      risk_factors:
+        start_page: 70
+        end_page: 90
+  motilalofs_fy25:
+    ticker: MOTILALOFS
+    company: Motilal Oswal Financial Services Limited
+    sector: BROKING_FINTECH
+    fiscal_year: FY25
+    pdf_path: data/raw_reports/motilalofs_fy25.pdf
+    total_pages: 425
+    statement_pages:
+      pnl: 289
+      bs: 288
+      cf: 290
+    sections:
+      business_overview:
+        start_page: 9
+        end_page: 35
+      mda:
+        start_page: 25
+        end_page: 42
+      risk_factors:
+        start_page: 41
+        end_page: 43
+  motilalofs_fy26:
+    ticker: MOTILALOFS
+    company: Motilal Oswal Financial Services Limited
+    sector: BROKING_FINTECH
+    fiscal_year: FY26
+    pdf_path: data/raw_reports/motilalofs_fy26.pdf
+    total_pages: 478
+    statement_pages:
+      pnl: 346
+      bs: 344
+      cf: 348
+    sections:
+      business_overview:
+        start_page: 11
+        end_page: 50
+      mda:
+        start_page: 51
+        end_page: 90
+      risk_factors:
+        start_page: 64
+        end_page: 90

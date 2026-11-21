@@ -1,0 +1,703 @@
+{
+  "meta": {
+    "total": 35,
+    "dev": 25,
+    "test": 10,
+    "category_counts": {
+      "numeric_lookup": 10,
+      "ratio_computation": 8,
+      "text_retrieval": 7,
+      "multi_hop_compare": 6,
+      "unanswerable": 4
+    },
+    "scope": {
+      "tickers": [
+        "TCS",
+        "INFY",
+        "ANGELONE",
+        "MOTILALOFS"
+      ],
+      "fiscal_years": [
+        "FY24",
+        "FY25",
+        "FY26"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was TCS's consolidated revenue from operations for FY2023-24?",
+      "expected_answer": "₹240893.00 crore",
+      "reasoning": "Direct lookup from Consolidated Statement of Profit and Loss: Sales row in Screener = Revenue from operations in PDF.",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 181,
+          "pdf": "tcs_fy24.pdf",
+          "label": "Consolidated PnL – Revenue from operations"
+        }
+      ]
+    },
+    {
+      "id": "Q002",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was Infosys's consolidated net profit (PAT) for FY2024-25?",
+      "expected_answer": "₹26713.00 crore",
+      "reasoning": "Net profit row from Screener Data Sheet confirmed against Consolidated P&L.",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY25",
+          "page": 276,
+          "pdf": "infy_fy25.pdf",
+          "label": "Consolidated PnL – Net profit"
+        }
+      ]
+    },
+    {
+      "id": "Q003",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was TCS's consolidated profit before tax for FY2025-26?",
+      "expected_answer": "₹65487.00 crore",
+      "reasoning": "Profit before tax from Screener row 28, confirmed against tcs_fy26.pdf page 167.",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY26",
+          "page": 167,
+          "pdf": "tcs_fy26.pdf",
+          "label": "Consolidated PnL – Profit before tax"
+        }
+      ]
+    },
+    {
+      "id": "Q004",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was Angel One's consolidated total equity (share capital + reserves) as at 31 March 2024?",
+      "expected_answer": "₹3038.60 crore",
+      "reasoning": "Equity Share Capital (84.01 Cr) + Reserves (2954.59 Cr) from Screener Balance Sheet.",
+      "gold_sources": [
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY24",
+          "page": 249,
+          "pdf": "angelone_fy24.pdf",
+          "label": "Consolidated BS – Equity"
+        }
+      ]
+    },
+    {
+      "id": "Q005",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was Motilal Oswal Financial Services' consolidated borrowings as at 31 March 2025?",
+      "expected_answer": "₹14731.61 crore",
+      "reasoning": "Borrowings row from Screener Balance Sheet; confirmed against MOFSL FY25 Consolidated BS in PDF (₹ Lakhs → ÷100).",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY25",
+          "page": 288,
+          "pdf": "motilalofs_fy25.pdf",
+          "label": "Consolidated BS – Borrowings"
+        }
+      ]
+    },
+    {
+      "id": "Q006",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was Infosys's consolidated revenue from operations for FY2025-26?",
+      "expected_answer": "₹178650.00 crore",
+      "reasoning": "Sales row FY26 from Screener confirmed against infy_fy26.pdf page 287.",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY26",
+          "page": 287,
+          "pdf": "infy_fy26.pdf",
+          "label": "Consolidated PnL – Revenue"
+        }
+      ]
+    },
+    {
+      "id": "Q007",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What were Angel One's consolidated finance costs for FY2024-25?",
+      "expected_answer": "₹295.89 crore",
+      "reasoning": "Interest row from Screener P&L for FY25.",
+      "gold_sources": [
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY25",
+          "page": 50,
+          "pdf": "angelone_fy25.pdf",
+          "label": "Consolidated PnL – Finance costs"
+        }
+      ]
+    },
+    {
+      "id": "Q008",
+      "split": "dev",
+      "category": "numeric_lookup",
+      "question": "What was TCS's consolidated cash flow from operating activities for FY2024-25?",
+      "expected_answer": "₹48908.00 crore",
+      "reasoning": "Cash from Operating Activity row from Screener Cash Flow section for FY25.",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY25",
+          "page": 184,
+          "pdf": "tcs_fy25.pdf",
+          "label": "Consolidated CF – Operating Activity"
+        }
+      ]
+    },
+    {
+      "id": "Q009",
+      "split": "test",
+      "category": "numeric_lookup",
+      "question": "What was Motilal Oswal Financial Services' consolidated net profit for FY2025-26?",
+      "expected_answer": "₹1869.31 crore",
+      "reasoning": "Net profit row from Screener FY26; confirmed against MOFSL FY26 Consolidated P&L page 346 (PDF in ₹ Lakhs).",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY26",
+          "page": 346,
+          "pdf": "motilalofs_fy26.pdf",
+          "label": "Consolidated PnL – Net profit"
+        }
+      ]
+    },
+    {
+      "id": "Q010",
+      "split": "test",
+      "category": "numeric_lookup",
+      "question": "What was Infosys's consolidated borrowings as at 31 March 2024?",
+      "expected_answer": "₹8359.00 crore",
+      "reasoning": "Borrowings row from Screener Balance Sheet FY24.",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY24",
+          "page": 271,
+          "pdf": "infy_fy24.pdf",
+          "label": "Consolidated BS – Borrowings"
+        }
+      ]
+    },
+    {
+      "id": "Q011",
+      "split": "dev",
+      "category": "ratio_computation",
+      "question": "What was TCS's consolidated net profit margin for FY2023-24?",
+      "expected_answer": "19.06%",
+      "reasoning": "Net Margin = Net Profit / Revenue = 45908.00 / 240893.00 × 100 = 19.06%",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 181,
+          "pdf": "tcs_fy24.pdf",
+          "label": "PnL – Net profit and Revenue"
+        }
+      ]
+    },
+    {
+      "id": "Q012",
+      "split": "dev",
+      "category": "ratio_computation",
+      "question": "What was Infosys's Return on Equity (ROE) for FY2024-25?",
+      "expected_answer": "27.88%",
+      "reasoning": "ROE = Net Profit / Total Equity = 26713.00 / 95818.00 × 100 = 27.88%",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY25",
+          "page": 276,
+          "pdf": "infy_fy25.pdf",
+          "label": "PnL and BS – Net profit, Equity"
+        }
+      ]
+    },
+    {
+      "id": "Q013",
+      "split": "dev",
+      "category": "ratio_computation",
+      "question": "What was Angel One's consolidated operating profit margin for FY2023-24?",
+      "expected_answer": "NOT_APPLICABLE",
+      "reasoning": "Angel One is classified under BROKING_FINTECH (Ind AS Division III). Finance costs are core operating expenses under this framework, so a traditional EBIT-based operating margin is not meaningful and is reported as NOT_APPLICABLE.",
+      "gold_sources": [
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY24",
+          "page": 250,
+          "pdf": "angelone_fy24.pdf",
+          "label": "Consolidated PnL – sector classification"
+        }
+      ]
+    },
+    {
+      "id": "Q014",
+      "split": "dev",
+      "category": "ratio_computation",
+      "question": "What was Motilal Oswal Financial Services' consolidated operating profit margin for FY2024-25?",
+      "expected_answer": "NOT_APPLICABLE",
+      "reasoning": "MOFSL is a Ind AS Division III financial services entity (BROKING_FINTECH sector). Finance costs are integral to its core operations, making an EBIT-based operating margin inapplicable.",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY25",
+          "page": 289,
+          "pdf": "motilalofs_fy25.pdf",
+          "label": "Consolidated PnL – sector note"
+        }
+      ]
+    },
+    {
+      "id": "Q015",
+      "split": "dev",
+      "category": "ratio_computation",
+      "question": "What was TCS's consolidated Debt-to-Equity ratio as at 31 March 2025?",
+      "expected_answer": "0.0991x",
+      "reasoning": "D/E = Borrowings / (Share Capital + Reserves) = 9392.00 / 94756.00 = 0.0991x",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY25",
+          "page": 180,
+          "pdf": "tcs_fy25.pdf",
+          "label": "Consolidated BS – Debt and Equity"
+        }
+      ]
+    },
+    {
+      "id": "Q016",
+      "split": "dev",
+      "category": "ratio_computation",
+      "question": "What was Infosys's YoY revenue growth rate from FY2023-24 to FY2024-25?",
+      "expected_answer": "6.06%",
+      "reasoning": "YoY Growth = (162990.00 − 153670.00) / 153670.00 × 100 = 6.06%",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY25",
+          "page": 276,
+          "pdf": "infy_fy25.pdf",
+          "label": "PnL – Revenue FY25"
+        },
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY24",
+          "page": 272,
+          "pdf": "infy_fy24.pdf",
+          "label": "PnL – Revenue FY24"
+        }
+      ]
+    },
+    {
+      "id": "Q017",
+      "split": "test",
+      "category": "ratio_computation",
+      "question": "What was TCS's 2-year revenue CAGR from FY2023-24 to FY2025-26?",
+      "expected_answer": "5.28%",
+      "reasoning": "CAGR = (Rev_FY26/Rev_FY24)^(1/2) − 1 = (267021.00/240893.00)^0.5 − 1 = 5.28%",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 181,
+          "pdf": "tcs_fy24.pdf"
+        },
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY26",
+          "page": 167,
+          "pdf": "tcs_fy26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "Q018",
+      "split": "test",
+      "category": "ratio_computation",
+      "question": "What was Motilal Oswal Financial Services' Return on Equity for FY2023-24?",
+      "expected_answer": "27.96%",
+      "reasoning": "ROE = 2441.06 / 8731.77 × 100 = 27.96%",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY24",
+          "page": 267,
+          "pdf": "motilalofs_fy24.pdf"
+        }
+      ]
+    },
+    {
+      "id": "Q019",
+      "split": "dev",
+      "category": "text_retrieval",
+      "question": "According to TCS's FY2023-24 Annual Report, what framework does TCS use for Enterprise Risk Management and what is its primary purpose?",
+      "expected_answer": "TCS uses its Enterprise Risk Management (ERM) framework to protect the company's business and clients, and to add value for all stakeholders by effectively managing and mitigating risks.",
+      "reasoning": "Page 79 of tcs_fy24.pdf contains TCS's ERM section: 'TCS understands the importance of effectively managing and mitigating risks to protect the company's business, its clients, to add value for all its stakeholders.'",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 79,
+          "pdf": "tcs_fy24.pdf",
+          "section": "risk_factors",
+          "passage_start": "TCS understands the importance"
+        }
+      ]
+    },
+    {
+      "id": "Q020",
+      "split": "dev",
+      "category": "text_retrieval",
+      "question": "What geo-political and macroeconomic risk does Infosys highlight in its FY2023-24 risk section, and how might it impact the company?",
+      "expected_answer": "Infosys highlights that unfavourable geo-political, economic or health events may result in business disruptions affecting revenue and profitability. The risk framework also covers supply chain constraints and talent availability.",
+      "reasoning": "Page 122 of infy_fy24.pdf: 'Geo-political, macroeconomic or health events – Unfavorable geo-political, economic or health events may result in...' under the Key/Emerging Risks table.",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY24",
+          "page": 122,
+          "pdf": "infy_fy24.pdf",
+          "section": "risk_factors",
+          "passage_start": "Geo-political, macroeconomic or health events"
+        }
+      ]
+    },
+    {
+      "id": "Q021",
+      "split": "dev",
+      "category": "text_retrieval",
+      "question": "What was the global GDP growth rate cited in Motilal Oswal Financial Services' FY2023-24 Management Discussion and Analysis?",
+      "expected_answer": "According to the MD&A, global economic growth declined from 3.5% in 2022 to an estimated 3.1% in 2023.",
+      "reasoning": "Page 49 of motilalofs_fy24.pdf, MD&A section: 'Global economic growth declined from 3.5% in 2022 to an estimated 3.1% in 2023. A disproportionate share...'",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY24",
+          "page": 49,
+          "pdf": "motilalofs_fy24.pdf",
+          "section": "mda",
+          "passage_start": "Global economic growth declined from 3.5%"
+        }
+      ]
+    },
+    {
+      "id": "Q022",
+      "split": "dev",
+      "category": "text_retrieval",
+      "question": "How does Angel One's FY2024-25 MD&A describe the global economic environment in 2024?",
+      "expected_answer": "Angel One's MD&A states the global economy exhibited resilience amidst mounting challenges of prolonged inflation, elevated interest rates and geopolitical tensions in 2024.",
+      "reasoning": "Page 41 of angelone_fy25.pdf, MD&A: 'The global economy exhibited resilience amidst mounting challenges of prolonged inflation, elevated interest rates and geopolitical tensions in 2024.'",
+      "gold_sources": [
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY25",
+          "page": 41,
+          "pdf": "angelone_fy25.pdf",
+          "section": "mda",
+          "passage_start": "The global economy exhibited resilience"
+        }
+      ]
+    },
+    {
+      "id": "Q023",
+      "split": "dev",
+      "category": "text_retrieval",
+      "question": "What is the AI-related risk Infosys identifies in its FY2025-26 annual report risk section?",
+      "expected_answer": "Infosys identifies the risk that if it is unable to transform existing services by leveraging AI and/or scale new AI-first services, it may face commoditisation of its offerings and loss of competitive positioning.",
+      "reasoning": "Page 133 of infy_fy26.pdf: 'Artificial Intelligence (AI) risks – If we are unable to transform existing services by leveraging AI and / or scale new AI-first services...'",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY26",
+          "page": 133,
+          "pdf": "infy_fy26.pdf",
+          "section": "risk_factors",
+          "passage_start": "Artificial Intelligence (AI) risks"
+        }
+      ]
+    },
+    {
+      "id": "Q024",
+      "split": "test",
+      "category": "text_retrieval",
+      "question": "What strengths does Motilal Oswal Financial Services highlight in its SWOT analysis in the FY2025-26 MD&A?",
+      "expected_answer": "MOFSL's SWOT analysis lists: strong brand name 'Motilal Oswal', experienced top management, integrated financial services provider, and independent and in-depth research capabilities.",
+      "reasoning": "Page 64 of motilalofs_fy26.pdf, MD&A SWOT Analysis: 'Strengths – Strong brand name Motilal Oswal. Experienced top management. Integrated financial services provider. Independent and in-depth research.'",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY26",
+          "page": 64,
+          "pdf": "motilalofs_fy26.pdf",
+          "section": "risk_factors",
+          "passage_start": "Strengths"
+        }
+      ]
+    },
+    {
+      "id": "Q025",
+      "split": "test",
+      "category": "text_retrieval",
+      "question": "How does Angel One's FY2025-26 MD&A describe the performance of Indian capital markets during the year?",
+      "expected_answer": "Angel One's MD&A states that Indian capital markets entered a phase of democratisation and structural maturity in FY26 marked by healthy retail participation, while Nifty 50 and BSE Sensex posted muted returns of -5.1% and -7.1% respectively and DII ownership in NSE-listed companies reached 16.6%.",
+      "reasoning": "Page 40 of angelone_fy26.pdf, MD&A: 'The Indian capital markets entered a phase of democratisation and structural maturity in FY26, marked by healthy retail participation... muted domestic equity market performance of -5.1% and -7.1% for the Nifty 50 and BSE Sensex respectively.'",
+      "gold_sources": [
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY26",
+          "page": 40,
+          "pdf": "angelone_fy26.pdf",
+          "section": "mda",
+          "passage_start": "The Indian capital markets entered"
+        }
+      ]
+    },
+    {
+      "id": "Q026",
+      "split": "dev",
+      "category": "multi_hop_compare",
+      "question": "Compare TCS and Infosys's net profit margins for FY2023-24 and explain what the difference suggests about their profitability profiles.",
+      "expected_answer": "TCS net margin: 19.06%; Infosys net margin: 17.07%. TCS has a higher net margin, reflecting its larger scale, diverse revenue mix, and operating leverage. TCS's MD&A highlights its differentiated AI.Cloud unit and operating model as drivers of sustained profitability.",
+      "reasoning": "Step 1: Compute TCS Net Margin = PAT/Revenue. Step 2: Compute INFY Net Margin. Step 3: Reference TCS MD&A (tcs_fy24 p69-71) for strategic differentiation narrative.",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 181,
+          "pdf": "tcs_fy24.pdf",
+          "label": "TCS PnL"
+        },
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY24",
+          "page": 272,
+          "pdf": "infy_fy24.pdf",
+          "label": "INFY PnL"
+        },
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 69,
+          "pdf": "tcs_fy24.pdf",
+          "section": "mda"
+        }
+      ]
+    },
+    {
+      "id": "Q027",
+      "split": "dev",
+      "category": "multi_hop_compare",
+      "question": "How did Angel One's total borrowings change between FY2023-24 and FY2025-26, and what business activity does the MD&A suggest drove this increase?",
+      "expected_answer": "Angel One's borrowings grew from ₹2541.12 crore (FY24) to ₹7951.41 crore (FY26), an increase of approximately 212.9%. The MD&A links higher borrowings to scaling the client funding book (margin trading facility), which grew 128.7% YoY in FY25 (to ₹36.5 billion) and a further 45.3% YoY in FY26 (to ~₹53.0 billion).",
+      "reasoning": "Step 1: Read total_debt FY24 and FY26 from CSV. Step 2: angelone_fy25.pdf page 48 & 50 MD&A states average client funding book grew 128.7% YoY, and angelone_fy26.pdf page 44 & 46 states average client funding book grew 45.3% YoY driving higher borrowings.",
+      "gold_sources": [
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY24",
+          "page": 249,
+          "pdf": "angelone_fy24.pdf"
+        },
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY26",
+          "page": 155,
+          "pdf": "angelone_fy26.pdf"
+        },
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY25",
+          "page": 48,
+          "pdf": "angelone_fy25.pdf",
+          "section": "mda"
+        },
+        {
+          "ticker": "ANGELONE",
+          "fiscal_year": "FY26",
+          "page": 46,
+          "pdf": "angelone_fy26.pdf",
+          "section": "mda"
+        }
+      ]
+    },
+    {
+      "id": "Q028",
+      "split": "dev",
+      "category": "multi_hop_compare",
+      "question": "Infosys grew revenue by approximately how much in FY2025-26, and what AI-related risk does its annual report identify that could threaten this growth?",
+      "expected_answer": "Infosys's FY26 revenue grew 9.61% YoY (from ₹162990.00 Cr to ₹178650.00 Cr). Its FY26 risk section identifies the risk that inability to transform services by leveraging AI or scale AI-first services could lead to commoditisation and loss of competitive positioning.",
+      "reasoning": "Step 1: Compute YoY revenue growth FY25→FY26. Step 2: Reference infy_fy26.pdf page 133 for AI risk description.",
+      "gold_sources": [
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY26",
+          "page": 287,
+          "pdf": "infy_fy26.pdf"
+        },
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY25",
+          "page": 276,
+          "pdf": "infy_fy25.pdf"
+        },
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY26",
+          "page": 133,
+          "pdf": "infy_fy26.pdf",
+          "section": "risk_factors"
+        }
+      ]
+    },
+    {
+      "id": "Q029",
+      "split": "dev",
+      "category": "multi_hop_compare",
+      "question": "Motilal Oswal Financial Services' net profit declined from FY2024-25 to FY2025-26. By how much did it decline, and what does the FY2025-26 MD&A say about Indian equity market conditions during the year?",
+      "expected_answer": "PAT declined by 25.30% (from ₹2501.64 Cr to ₹1869.31 Cr). The FY26 MD&A notes that Indian equities experienced a broad-based correction in FY26, with indices showing negative returns, which weighed on fee-based and proprietary income.",
+      "reasoning": "Step 1: Compute PAT change. Step 2: Reference motilalofs_fy26.pdf page 53 for equity market correction context.",
+      "gold_sources": [
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY25",
+          "page": 289,
+          "pdf": "motilalofs_fy25.pdf"
+        },
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY26",
+          "page": 346,
+          "pdf": "motilalofs_fy26.pdf"
+        },
+        {
+          "ticker": "MOTILALOFS",
+          "fiscal_year": "FY26",
+          "page": 53,
+          "pdf": "motilalofs_fy26.pdf",
+          "section": "mda"
+        }
+      ]
+    },
+    {
+      "id": "Q030",
+      "split": "test",
+      "category": "multi_hop_compare",
+      "question": "How has TCS's operating profit (EBIT) trended from FY24 to FY26, and what currency-related risk does TCS's FY24 risk section identify as a key financial risk?",
+      "expected_answer": "TCS's operating profit (EBIT = PBT + Interest − Other Income) was ₹59311.00 Cr (FY24), ₹62165.00 Cr (FY25), and ₹66838.00 Cr (FY26), showing a consistent upward trend. TCS's FY24 ERM section (page 82) identifies currency volatility as a key financial risk, noting that revenue and cost mismatches across geographies can materially impact financial performance.",
+      "reasoning": "Step 1: Compute EBIT for each year from CSV. Step 2: Reference tcs_fy24.pdf page 82 for currency risk passage.",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 82,
+          "pdf": "tcs_fy24.pdf",
+          "section": "risk_factors"
+        },
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY24",
+          "page": 181,
+          "pdf": "tcs_fy24.pdf"
+        },
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY26",
+          "page": 167,
+          "pdf": "tcs_fy26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "Q031",
+      "split": "test",
+      "category": "multi_hop_compare",
+      "question": "What is the revenue gap between TCS and Infosys in FY2025-26, and what talent-related risk does Infosys highlight in its FY24 risk section that could affect future competitiveness?",
+      "expected_answer": "TCS's FY26 revenue (₹267021.00 Cr) exceeds Infosys's (₹178650.00 Cr) by ₹88371.00 Cr. Infosys's FY24 risk section (page 123) highlights talent supply constraints: inability to hire, engage and retain technology and management talent could impair delivery quality and growth.",
+      "reasoning": "Step 1: Compute revenue gap from CSV. Step 2: Reference infy_fy24.pdf page 123 talent risk passage.",
+      "gold_sources": [
+        {
+          "ticker": "TCS",
+          "fiscal_year": "FY26",
+          "page": 167,
+          "pdf": "tcs_fy26.pdf"
+        },
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY26",
+          "page": 287,
+          "pdf": "infy_fy26.pdf"
+        },
+        {
+          "ticker": "INFY",
+          "fiscal_year": "FY24",
+          "page": 123,
+          "pdf": "infy_fy24.pdf",
+          "section": "risk_factors"
+        }
+      ]
+    },
+    {
+      "id": "Q032",
+      "split": "dev",
+      "category": "unanswerable",
+      "question": "What was TCS's quarterly revenue for Q1 FY2027?",
+      "expected_answer": "REFUSE_OUT_OF_SCOPE",
+      "reasoning": "FY27 data is entirely outside the scope of this dataset (FY24–FY26 only). No FY27 figures exist in the annual reports or Screener files.",
+      "gold_sources": [],
+      "metadata": {
+        "reason": "future_fiscal_year"
+      }
+    },
+    {
+      "id": "Q033",
+      "split": "dev",
+      "category": "unanswerable",
+      "question": "What was Wipro's consolidated net profit for FY2024-25?",
+      "expected_answer": "REFUSE_OUT_OF_SCOPE",
+      "reasoning": "Wipro is not one of the four covered companies (TCS, INFY, ANGELONE, MOTILALOFS). No data for Wipro exists in this corpus.",
+      "gold_sources": [],
+      "metadata": {
+        "reason": "out_of_scope_company"
+      }
+    },
+    {
+      "id": "Q034",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "What revenue guidance has TCS provided for FY2026-27?",
+      "expected_answer": "REFUSE_OUT_OF_SCOPE",
+      "reasoning": "None of TCS's annual reports (FY24, FY25, FY26) provide explicit forward revenue guidance for FY27. TCS's reports note macro uncertainty and do not publish formal revenue guidance.",
+      "gold_sources": [],
+      "metadata": {
+        "reason": "unstated_guidance"
+      }
+    },
+    {
+      "id": "Q035",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "What were Angel One's quarterly subscriber additions in Q2 FY2024-25?",
+      "expected_answer": "REFUSE_OUT_OF_SCOPE",
+      "reasoning": "The dataset covers only consolidated annual financial statements and narrative sections from annual reports. Quarterly subscriber addition data is not present in any of the 12 PDFs or Screener XLSX files.",
+      "gold_sources": [],
+      "metadata": {
+        "reason": "quarterly_operational_metric_not_in_corpus"
+      }
+    }
+  ]
+}

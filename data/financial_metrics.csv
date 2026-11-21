@@ -1,0 +1,121 @@
+ticker,company,sector,fiscal_year,metric,value,unit,statement_label,page_ref
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,revenue_from_operations,240893.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,other_income,3464.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,total_income,244357.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,operating_profit,59311.00,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,finance_costs,778.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,profit_before_tax,61997.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,net_profit,45908.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,total_debt,8021.0,INR_CRORE,Consolidated_BS,180
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,total_equity,90489.0,INR_CRORE,Consolidated_BS,180
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY24,operating_cash_flow,44338.0,INR_CRORE,Consolidated_CF,184
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,revenue_from_operations,255324.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,other_income,3962.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,total_income,259286.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,operating_profit,62165.00,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,finance_costs,796.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,profit_before_tax,65331.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,net_profit,48553.0,INR_CRORE,Consolidated_PnL,181
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,total_debt,9392.0,INR_CRORE,Consolidated_BS,180
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,total_equity,94756.0,INR_CRORE,Consolidated_BS,180
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY25,operating_cash_flow,48908.0,INR_CRORE,Consolidated_CF,184
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,revenue_from_operations,267021.0,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,other_income,-124.0,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,total_income,266897.0,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,operating_profit,66838.00,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,finance_costs,1227.0,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,profit_before_tax,65487.0,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,net_profit,49210.0,INR_CRORE,Consolidated_PnL,167
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,total_debt,11283.0,INR_CRORE,Consolidated_BS,166
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,total_equity,107240.0,INR_CRORE,Consolidated_BS,166
+TCS,Tata Consultancy Services Limited,IT_SERVICES,FY26,operating_cash_flow,52094.0,INR_CRORE,Consolidated_CF,172
+INFY,Infosys Limited,IT_SERVICES,FY24,revenue_from_operations,153670.0,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,other_income,4711.0,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,total_income,158381.0,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,operating_profit,31747.00,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,finance_costs,470.0,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,profit_before_tax,35988.0,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,net_profit,26233.0,INR_CRORE,Consolidated_PnL,272
+INFY,Infosys Limited,IT_SERVICES,FY24,total_debt,8359.0,INR_CRORE,Consolidated_BS,271
+INFY,Infosys Limited,IT_SERVICES,FY24,total_equity,88116.0,INR_CRORE,Consolidated_BS,271
+INFY,Infosys Limited,IT_SERVICES,FY24,operating_cash_flow,25210.0,INR_CRORE,Consolidated_CF,279
+INFY,Infosys Limited,IT_SERVICES,FY25,revenue_from_operations,162990.0,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,other_income,3600.0,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,total_income,166590.0,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,operating_profit,34424.00,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,finance_costs,416.0,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,profit_before_tax,37608.0,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,net_profit,26713.0,INR_CRORE,Consolidated_PnL,276
+INFY,Infosys Limited,IT_SERVICES,FY25,total_debt,8227.0,INR_CRORE,Consolidated_BS,275
+INFY,Infosys Limited,IT_SERVICES,FY25,total_equity,95818.0,INR_CRORE,Consolidated_BS,275
+INFY,Infosys Limited,IT_SERVICES,FY25,operating_cash_flow,35694.0,INR_CRORE,Consolidated_CF,283
+INFY,Infosys Limited,IT_SERVICES,FY26,revenue_from_operations,178650.0,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,other_income,3033.0,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,total_income,181683.0,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,operating_profit,37378.00,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,finance_costs,416.0,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,profit_before_tax,39995.0,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,net_profit,29440.0,INR_CRORE,Consolidated_PnL,287
+INFY,Infosys Limited,IT_SERVICES,FY26,total_debt,9176.0,INR_CRORE,Consolidated_BS,286
+INFY,Infosys Limited,IT_SERVICES,FY26,total_equity,92852.0,INR_CRORE,Consolidated_BS,286
+INFY,Infosys Limited,IT_SERVICES,FY26,operating_cash_flow,33986.0,INR_CRORE,Consolidated_CF,294
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,revenue_from_operations,4272.34,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,other_income,7.44,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,total_income,4279.78,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,operating_profit,NA,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,finance_costs,136.7,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,profit_before_tax,1513.68,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,net_profit,1125.53,INR_CRORE,Consolidated_PnL,250
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,total_debt,2541.12,INR_CRORE,Consolidated_BS,249
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,total_equity,3038.60,INR_CRORE,Consolidated_BS,249
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY24,operating_cash_flow,-329.9,INR_CRORE,Consolidated_CF,251
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,revenue_from_operations,5239.22,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,other_income,8.35,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,total_income,5247.57,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,operating_profit,NA,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,finance_costs,295.89,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,profit_before_tax,1591.95,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,net_profit,1172.08,INR_CRORE,Consolidated_PnL,50
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,total_debt,3413.74,INR_CRORE,Consolidated_BS,145
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,total_equity,5621.39,INR_CRORE,Consolidated_BS,145
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY25,operating_cash_flow,-1859.84,INR_CRORE,Consolidated_CF,146
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,revenue_from_operations,5137.68,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,other_income,14.56,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,total_income,5152.24,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,operating_profit,NA,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,finance_costs,437.69,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,profit_before_tax,1271.76,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,net_profit,915.1,INR_CRORE,Consolidated_PnL,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,total_debt,7951.41,INR_CRORE,Consolidated_BS,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,total_equity,6117.80,INR_CRORE,Consolidated_BS,155
+ANGELONE,Angel One Limited,BROKING_FINTECH,FY26,operating_cash_flow,-4141.74,INR_CRORE,Consolidated_CF,156
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,revenue_from_operations,7069.35,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,other_income,61.17,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,total_income,7130.52,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,operating_profit,NA,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,finance_costs,1014.14,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,profit_before_tax,3031.88,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,net_profit,2441.06,INR_CRORE,Consolidated_PnL,267
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,total_debt,13787.48,INR_CRORE,Consolidated_BS,266
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,total_equity,8731.77,INR_CRORE,Consolidated_BS,266
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY24,operating_cash_flow,-349.64,INR_CRORE,Consolidated_CF,268
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,revenue_from_operations,8339.54,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,other_income,77.68,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,total_income,8417.22,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,operating_profit,NA,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,finance_costs,1298.46,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,profit_before_tax,3226.26,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,net_profit,2501.64,INR_CRORE,Consolidated_PnL,289
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,total_debt,14731.61,INR_CRORE,Consolidated_BS,288
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,total_equity,11079.33,INR_CRORE,Consolidated_BS,288
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY25,operating_cash_flow,1214.73,INR_CRORE,Consolidated_CF,290
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,revenue_from_operations,9381.37,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,other_income,42.08,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,total_income,9423.45,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,operating_profit,NA,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,finance_costs,1336.41,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,profit_before_tax,2472.07,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,net_profit,1869.31,INR_CRORE,Consolidated_PnL,346
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,total_debt,21255.11,INR_CRORE,Consolidated_BS,344
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,total_equity,12888.12,INR_CRORE,Consolidated_BS,344
+MOTILALOFS,Motilal Oswal Financial Services Limited,BROKING_FINTECH,FY26,operating_cash_flow,-6070.7,INR_CRORE,Consolidated_CF,348
